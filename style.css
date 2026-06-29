@@ -30,3 +30,12 @@
   background-color: black;
   border-top: 10px dashed white;
 }
+.Car1 {
+  position: absolute;
+  bottom: 140px;
+  left: 100px;
+}
+.Car1 img {
+  width: 200px;
+  height: 190px;
+}
