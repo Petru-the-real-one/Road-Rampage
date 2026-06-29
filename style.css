@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Sky {
+  width: 100%;
+  height: 45vh;
+  background: linear-gradient(#0f4c70, #54bfff);
+}
+.Grass {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(#25671e, #51ab1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Grass img {
+  height: 130px;
+}
+.RoadHalf1 {
+  width: 100%;
+  height: 17.5vh;
+  background-color: black;
+}
+.RoadHalf2 {
+  width: 100%;
+  height: 17.5vh;
+  background-color: black;
+  border-top: 10px dashed white;
+}
