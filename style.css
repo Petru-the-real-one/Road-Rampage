@@ -35,7 +35,44 @@
   bottom: 140px;
   left: 100px;
 }
+.Car2 {
+  position: absolute;
+  top: 750px;
+  right: 100px;
+}
 .Car1 img {
   width: 200px;
   height: 190px;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+  animation-delay: 0s;
+}
+#car1 {
+  animation-name: vehicle1;
+}
+@keyframes vehicle1 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(1900px);
+  }
+}
+.Car2 img {
+  width: 200px;
+  height: 190px;
+  animation-duration: 4s;
+  animation-iteration-count: 100;
+  animation-delay: 0s;
+}
+#car2 {
+  animation-name: vehicle2;
+}
+@keyframes vehicle2 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-1900px);
+  }
 }
