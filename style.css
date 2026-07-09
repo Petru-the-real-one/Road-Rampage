@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .Sky {
   width: 100%;
@@ -37,10 +38,10 @@
 }
 .Car2 {
   position: absolute;
-  top: 750px;
+  bottom: -20px;
   right: 100px;
 }
-.Car1 img {
+.Car1 {
   width: 200px;
   height: 190px;
   animation-duration: 4s;
@@ -58,11 +59,12 @@
     transform: translateX(1900px);
   }
 }
-.Car2 img {
+.Car2 {
   width: 200px;
   height: 190px;
   animation-duration: 4s;
   animation-iteration-count: 100;
+
   animation-delay: 0s;
 }
 #car2 {
@@ -74,5 +76,42 @@
   }
   to {
     transform: translateX(-1900px);
+  }
+}
+.Sun {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 10px;
+  top: 10px;
+  animation: spin 4s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Cloud {
+  width: 200px;
+  height: 200px;
+  right: 10px;
+  top: 10px;
+  animation-duration: 15s;
+  animation-iteration-count: 100;
+  animation-delay: 0s;
+  animation-direction: alternate-reverse;
+}
+#Cloud {
+  animation-name: Cloud;
+}
+@keyframes Cloud {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(1500px);
   }
 }
